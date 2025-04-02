@@ -1,0 +1,75 @@
+/* Common Card Styles */
+#card-data {
+    display: flex;
+    justify-content: flex-start; /* Align cards to the left */
+    align-items: center;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    padding: 20px; /* Add padding as needed */
+}
+
+.card {
+    background-color: #FFF8DB; /* Light yellow background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-between; /* Distribute space evenly */
+    align-items: center; /* Center align items vertically */
+    min-width: 250px; /* Minimum width for the card */
+    max-width: 100%; /* Maximum width for the card */
+    width: fit-content; /* Adjust width to fit content */
+    margin: 0 20px 20px 20px; /* Margin around the card */
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s; /* Smooth transition */
+    border-bottom: 5px solid transparent; /* Initial bottom border color */
+}
+
+.card-body {
+    flex: 1; /* Take up remaining space */
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: space-between; /* Distribute space evenly */
+    align-items: center; /* Center align items vertically */
+}
+
+.text-content {
+    text-align: left; /* Left align content */
+}
+
+.card-body h3 {
+    color: #304463; /* Dark blue color for heading */
+    font-size: 24px;
+    margin-bottom: 10px; /* Bottom margin for spacing */
+}
+
+.card-body .statistic {
+    color: #7D8ABC; /* Blue-gray color for statistic */
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.card-icon {
+    margin-left: 20px; /* Space between text and icon */
+}
+
+/* Hover Effects */
+.card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    transform: scale(1.05); /* Slightly increase size */
+    border-bottom: 5px solid #304463; /* Change bottom border color on hover */
+}
+
+/* Media Query for Medium and Small Screens */
+@media (max-width: 768px) {
+    #card-data {
+        justify-content: center; /* Center cards on medium and small screens */
+    }
+
+    .card-body {
+        flex-direction: column; /* Stack text and icon vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .card-icon {
+        margin-left: 0; /* Remove margin for vertical stacking */
+        margin-top: 10px; /* Add margin above icon */
+    }
+}

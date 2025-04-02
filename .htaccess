@@ -1,0 +1,62 @@
+RewriteEngine on
+
+#index
+RewriteRule ^login?$ index.php [L]
+RewriteRule ^$ index.php [L]
+
+#dashboard
+RewriteRule ^dashboard?$ modules/dashboard/dashboard.php [L]
+
+#Invoice
+RewriteRule ^invoice?$ modules/invoice/invoice.php?page_id=6&access=0 [L]
+
+
+
+#inventory
+RewriteRule ^inventory?$ modules/inventory/inventory.php?page_id=10&access=0 [L]
+
+#out_of_stock
+RewriteRule ^out-of-stock?$ modules/out_of_stock/out_of_stock.php?page_id=14&access=0 [L]
+
+#price_history
+RewriteRule ^price-history?$ modules/price_history/price_history.php?page_id=16&access=0 [L]
+
+#purchase_history
+RewriteRule ^purchase-order?$ modules/purchase_history/purchase_history.php?page_id=18&access=0 [L]
+
+#products
+RewriteRule ^products?$ modules/products/products.php?page_id=22&access=0 [L]
+
+#vendor
+RewriteRule ^vendors?$ modules/vendor/vendor.php?page_id=26&access=0 [L]
+
+#transactions
+RewriteRule ^transactions?$ modules/transactions/transactions.php?page_id=30&access=0 [L]
+
+#sales-report
+RewriteRule ^sales-report?$ modules/sales_report/sales_report.php?page_id=33&access=0 [L]
+
+#customer
+RewriteRule ^customer?$ modules/customer/customer.php?page_id=35&access=0 [L]
+
+#role_permission
+RewriteRule ^role-permission?$ modules/role_permission/role.php [L]
+
+#employee
+RewriteRule ^employee?$ modules/employee/employee.php?page_id=1&access=0 [L]
+
+#Invoice
+RewriteRule ^quotation?$ modules/quotation/quotation.php?page_id=6&access=0 [L]
+
+#Invoice
+RewriteRule ^delivery-challan?$ modules/delivery_challan/delivery_challan.php?page_id=6&access=0 [L]
+
+#firm-profile
+RewriteRule ^firm-profile?$ modules/firm_profile/firm_profile.php [L]
+
+#vendor-invoice
+RewriteRule ^vendor-invoice?$ modules/vendor_invoice/vendor_invoice.php [L]
+
+# Custom 404 page
+RewriteRule ^user-access-denied?$ global/components/user_access_denied.php [L]
+

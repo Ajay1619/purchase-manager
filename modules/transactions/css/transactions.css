@@ -1,0 +1,107 @@
+#title{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Highlighted row */
+.highlighted {
+    background-color: #f0f8ff;
+    /* Light blue */
+}
+
+/* Footer row */
+.footer {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+#chart {
+    max-width: 100%;
+    margin: 35px auto;
+
+}
+#time-frame {
+    margin: 20px;
+}
+#transaction-chart{
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+  
+#year-dropdown{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 20px;
+}
+  
+#income-expense-dropdown {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 20px;
+}
+
+#price-history-table {
+    overflow-x: auto;
+}
+
+.price-history-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.price-history-table th, .price-history-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.price-history-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.price-history-table .increase {
+    color: red;
+}
+
+.price-history-table .decrease {
+    color: green;
+}
+
+@media (max-width: 768px) {
+    .modal-body {
+        gap: 10px;
+    }
+    
+    #vendor-dropdown {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .price-history-table th, .price-history-table td {
+        padding: 6px;
+        font-size: 14px;
+    }
+}

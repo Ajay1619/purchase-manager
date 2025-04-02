@@ -1,0 +1,45 @@
+[04-Oct-2024 18:25:28 Asia/Kolkata] PHP Warning:  Undefined array key "inventory_unit_of_measure" in /home/aquilate/public_html/trex.aquila-tech.in/modules/quotation/ajax/calculate_quotation.php on line 6
+[04-Oct-2024 18:25:28 Asia/Kolkata] PHP Warning:  Undefined array key "quantity_in_stock" in /home/aquilate/public_html/trex.aquila-tech.in/modules/quotation/ajax/calculate_quotation.php on line 7
+[04-Oct-2024 18:25:28 Asia/Kolkata] PHP Warning:  Undefined array key "product_code" in /home/aquilate/public_html/trex.aquila-tech.in/modules/quotation/ajax/calculate_quotation.php on line 12
+[04-Oct-2024 18:25:28 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/aquilate/public_html/trex.aquila-tech.in/modules/quotation/ajax/calculate_quotation.php on line 17
+[04-Oct-2024 18:25:28 Asia/Kolkata] PHP Fatal error:  Uncaught Exception: Invalid unit provided in /home/aquilate/public_html/trex.aquila-tech.in/config/globalFunctions.php:614
+Stack trace:
+#0 /home/aquilate/public_html/trex.aquila-tech.in/modules/quotation/ajax/calculate_quotation.php(18): convertUnitQuantity()
+#1 {main}
+  thrown in /home/aquilate/public_html/trex.aquila-tech.in/config/globalFunctions.php on line 614
+[04-Oct-2024 18:25:31 Asia/Kolkata] PHP Warning:  Undefined array key "inventory_unit_of_measure" in /home/aquilate/public_html/trex.aquila-tech.in/modules/quotation/ajax/calculate_quotation.php on line 6
+[04-Oct-2024 18:25:31 Asia/Kolkata] PHP Warning:  Undefined array key "quantity_in_stock" in /home/aquilate/public_html/trex.aquila-tech.in/modules/quotation/ajax/calculate_quotation.php on line 7
+[04-Oct-2024 18:25:31 Asia/Kolkata] PHP Warning:  Undefined array key "product_code" in /home/aquilate/public_html/trex.aquila-tech.in/modules/quotation/ajax/calculate_quotation.php on line 12
+[04-Oct-2024 18:25:31 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/aquilate/public_html/trex.aquila-tech.in/modules/quotation/ajax/calculate_quotation.php on line 17
+[04-Oct-2024 18:25:31 Asia/Kolkata] PHP Fatal error:  Uncaught Exception: Invalid unit provided in /home/aquilate/public_html/trex.aquila-tech.in/config/globalFunctions.php:614
+Stack trace:
+#0 /home/aquilate/public_html/trex.aquila-tech.in/modules/quotation/ajax/calculate_quotation.php(18): convertUnitQuantity()
+#1 {main}
+  thrown in /home/aquilate/public_html/trex.aquila-tech.in/config/globalFunctions.php on line 614
+[04-Oct-2024 18:25:33 Asia/Kolkata] PHP Warning:  Undefined array key "inventory_unit_of_measure" in /home/aquilate/public_html/trex.aquila-tech.in/modules/quotation/ajax/calculate_quotation.php on line 6
+[04-Oct-2024 18:25:33 Asia/Kolkata] PHP Warning:  Undefined array key "quantity_in_stock" in /home/aquilate/public_html/trex.aquila-tech.in/modules/quotation/ajax/calculate_quotation.php on line 7
+[04-Oct-2024 18:25:33 Asia/Kolkata] PHP Warning:  Undefined array key "product_code" in /home/aquilate/public_html/trex.aquila-tech.in/modules/quotation/ajax/calculate_quotation.php on line 12
+[04-Oct-2024 18:25:33 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/aquilate/public_html/trex.aquila-tech.in/modules/quotation/ajax/calculate_quotation.php on line 17
+[04-Oct-2024 18:25:33 Asia/Kolkata] PHP Fatal error:  Uncaught Exception: Invalid unit provided in /home/aquilate/public_html/trex.aquila-tech.in/config/globalFunctions.php:614
+Stack trace:
+#0 /home/aquilate/public_html/trex.aquila-tech.in/modules/quotation/ajax/calculate_quotation.php(18): convertUnitQuantity()
+#1 {main}
+  thrown in /home/aquilate/public_html/trex.aquila-tech.in/config/globalFunctions.php on line 614
+[04-Oct-2024 18:25:34 Asia/Kolkata] PHP Warning:  Undefined array key "inventory_unit_of_measure" in /home/aquilate/public_html/trex.aquila-tech.in/modules/quotation/ajax/calculate_quotation.php on line 6
+[04-Oct-2024 18:25:34 Asia/Kolkata] PHP Warning:  Undefined array key "quantity_in_stock" in /home/aquilate/public_html/trex.aquila-tech.in/modules/quotation/ajax/calculate_quotation.php on line 7
+[04-Oct-2024 18:25:34 Asia/Kolkata] PHP Warning:  Undefined array key "product_code" in /home/aquilate/public_html/trex.aquila-tech.in/modules/quotation/ajax/calculate_quotation.php on line 12
+[04-Oct-2024 18:25:34 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/aquilate/public_html/trex.aquila-tech.in/modules/quotation/ajax/calculate_quotation.php on line 17
+[04-Oct-2024 18:25:34 Asia/Kolkata] PHP Fatal error:  Uncaught Exception: Invalid unit provided in /home/aquilate/public_html/trex.aquila-tech.in/config/globalFunctions.php:614
+Stack trace:
+#0 /home/aquilate/public_html/trex.aquila-tech.in/modules/quotation/ajax/calculate_quotation.php(18): convertUnitQuantity()
+#1 {main}
+  thrown in /home/aquilate/public_html/trex.aquila-tech.in/config/globalFunctions.php on line 614
+[04-Oct-2024 18:25:59 Asia/Kolkata] PHP Warning:  Undefined array key "inventory_unit_of_measure" in /home/aquilate/public_html/trex.aquila-tech.in/modules/quotation/ajax/calculate_quotation.php on line 6
+[04-Oct-2024 18:25:59 Asia/Kolkata] PHP Warning:  Undefined array key "quantity_in_stock" in /home/aquilate/public_html/trex.aquila-tech.in/modules/quotation/ajax/calculate_quotation.php on line 7
+[04-Oct-2024 18:25:59 Asia/Kolkata] PHP Warning:  Undefined array key "product_code" in /home/aquilate/public_html/trex.aquila-tech.in/modules/quotation/ajax/calculate_quotation.php on line 12
+[04-Oct-2024 18:25:59 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/aquilate/public_html/trex.aquila-tech.in/modules/quotation/ajax/calculate_quotation.php on line 17
+[04-Oct-2024 18:25:59 Asia/Kolkata] PHP Fatal error:  Uncaught Exception: Invalid unit provided in /home/aquilate/public_html/trex.aquila-tech.in/config/globalFunctions.php:614
+Stack trace:
+#0 /home/aquilate/public_html/trex.aquila-tech.in/modules/quotation/ajax/calculate_quotation.php(18): convertUnitQuantity()
+#1 {main}
+  thrown in /home/aquilate/public_html/trex.aquila-tech.in/config/globalFunctions.php on line 614

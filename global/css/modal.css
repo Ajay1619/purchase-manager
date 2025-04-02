@@ -1,0 +1,108 @@
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 4% 20%; /* 10% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  position: relative;
+  border-radius: 8px;
+  width: auto; /* Let the content define the width */
+  max-width: 90%; /* Limit the maximum width */
+  max-height: 90%; /* Limit the maximum height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Modal Title */
+.modal-title {
+  margin-top: 0;
+  color: #333;
+  font-size: 24px; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the title bold */
+  text-align: center; /* Center align the title */
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Footer */
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+/* Confirm and Cancel Buttons */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-danger:hover,
+.btn-secondary:hover {
+  opacity: 0.8;
+}
+
+/* Adjustments for medium screens */
+@media (max-width: 1200px) {
+  .modal-content {
+    margin: 4% 10%; /* Decrease side margins */
+    padding: 15px; /* Decrease padding */
+    max-width: 80%; /* Adjust maximum width */
+  }
+}
+
+/* Adjustments for small screens */
+@media (max-width: 600px) {
+  .modal-content {
+    margin: 4% 5%; /* Further decrease side margins */
+    padding: 10px; /* Further decrease padding */
+    max-width: 90%; /* Adjust maximum width */
+  }
+
+  .modal-title {
+    font-size: 20px; /* Adjust the font size */
+  }
+
+  .close {
+    font-size: 24px; /* Adjust the close button size */
+  }
+}

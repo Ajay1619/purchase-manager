@@ -1,0 +1,50 @@
+.badge {
+  display: inline-block;
+  padding: 0.4em 0.8em;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 12px;
+  color: #fff;
+  margin: 0.2em;
+}
+
+.badge-success {
+  background-color: #4caf50;
+}
+
+.badge-warning {
+  background-color: #ff9800;
+}
+
+.badge-alert {
+  background-color: #f44336;
+}
+
+.badge-info {
+  background-color: #2196f3;
+}
+
+/* Circular badge */
+.badge-circular {
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes it circular */
+  border: none;
+  color: #fff; /* Text color */
+  font-size: 16px; /* Adjust font size as needed */
+  line-height: 30px; /* Center aligns content vertically */
+}
+
+@media (max-width: 768px) {
+  .badge {
+    font-size: 12px;
+    padding: 0.3em 0.6em;
+  }
+
+  .badge-circular {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+  }
+}

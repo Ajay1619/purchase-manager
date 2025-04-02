@@ -1,0 +1,32 @@
+.styled-table th:first-child,
+.styled-table th:nth-child(2) {
+  text-align: left; /* Left align first and second column headers */
+}
+
+.styled-table th {
+  text-align: center; /* Center align all other headers */
+}
+
+.styled-table td:first-child,
+.styled-table td:nth-child(2) {
+  text-align: left; /* Left align first and second column */
+}
+
+.styled-table td {
+  text-align: center; /* Center align all other cells */
+}
+
+.table-action {
+  cursor: pointer;
+}
+/* CSS for hover effect on SVG icons */
+.table-action svg:hover {
+  transform: scale(1.1); /* Scale up the SVG on hover */
+  transition: transform 0.2s ease; /* Smooth transition */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* CSS for click effect on SVG icons */
+.table-action svg:active {
+  transform: scale(0.9); /* Scale down the SVG on click */
+}

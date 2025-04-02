@@ -1,0 +1,92 @@
+.styled-table th:first-child,
+.styled-table th:nth-child(2) {
+  text-align: left; /* Left align first and second column headers */
+}
+
+.styled-table th {
+  text-align: center; /* Center align all other headers */
+}
+
+.styled-table td:first-child,
+.styled-table td:nth-child(2) {
+  text-align: left; /* Left align first and second column */
+}
+
+.styled-table td {
+  text-align: center; /* Center align all other cells */
+}
+
+.table-action {
+  cursor: pointer;
+}
+/* CSS for hover effect on SVG icons */
+.table-action svg:hover {
+  transform: scale(1.1); /* Scale up the SVG on hover */
+  transition: transform 0.2s ease; /* Smooth transition */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* CSS for click effect on SVG icons */
+.table-action svg:active {
+  transform: scale(0.9); /* Scale down the SVG on click */
+}
+
+#chart {
+  max-width: 100%;
+  margin: 35px auto;
+}
+
+#vendor-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#sales-report-history-table {
+  overflow-x: auto;
+}
+#sales-report-history-table h2 {
+  text-align: center;
+}
+.sales-report-history-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sales-report-history-table th,
+.sales-report-history-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.sales-report-history-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.sales-report-history-table .increase {
+  color: red;
+}
+
+.sales-report-history-table .decrease {
+  color: green;
+}
+
+@media (max-width: 768px) {
+  .modal-body {
+    gap: 10px;
+  }
+
+  #vendor-dropdown {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sales-report-history-table th,
+  .sales-report-history-table td {
+    padding: 6px;
+    font-size: 14px;
+  }
+}

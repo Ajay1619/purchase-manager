@@ -1,0 +1,301 @@
+#button-container {
+    display: flex;
+    justify-content: flex-end;
+    /* Align items to the left */
+    padding: 20px;
+    /* Optional: Add padding as needed */
+}
+
+.styled-table th:first-child,
+.styled-table th:nth-child(2) {
+    text-align: left; /* Left align first and second column headers */
+}
+
+.styled-table th {
+    text-align: center; /* Center align all other headers */
+}
+
+.styled-table td:first-child,
+.styled-table td:nth-child(2) {
+    text-align: left; /* Left align first and second column */
+}
+
+.styled-table td {
+    text-align: center; /* Center align all other cells */
+}
+
+.table-action{
+    cursor: pointer;
+}
+/* CSS for hover effect on SVG icons */
+.table-action svg:hover {
+    transform: scale(1.1); /* Scale up the SVG on hover */
+    transition: transform 0.2s ease; /* Smooth transition */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* CSS for click effect on SVG icons */
+.table-action svg:active {
+    transform: scale(0.9); /* Scale down the SVG on click */
+}
+
+/* CSS for hover effect on SVG icons */
+.table-action svg:hover {
+    transform: scale(1.1); /* Scale up the SVG on hover */
+    transition: transform 0.2s ease; /* Smooth transition */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* CSS for click effect on SVG icons */
+.table-action svg:active {
+    transform: scale(0.9); /* Scale down the SVG on click */
+}
+/* add product form */
+/* Center the form */
+form {
+    margin: 50px auto; /* Center horizontally and provide top margin */
+    max-width: 800px; /* Limit width for larger screens */
+    padding: 20px;
+}
+
+/* Flex container for form rows */
+.form-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow rows to wrap */
+    gap: 15px;
+    margin-bottom: 15px; /* Space between rows */
+}
+
+/* Flex container for columns within each row */
+.form-column {
+    flex: 1; /* Each column takes equal space */
+}
+
+/* Additional styling for checkbox column */
+.checkbox-column {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+/* Ensure the label and checkbox are aligned properly */
+.discount-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Input, select, textarea styling */
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 100%; /* Full width */
+    padding: 12px;
+}
+
+.submit{
+    width: 100%; /* Full width */
+}
+
+/* Description fields */
+.description {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.description-items {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 12px;
+
+}
+/* Positioning for "Add Item" and circular button */
+.add-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#product-table-data{
+    overflow-x: auto;
+}
+
+/* Positioning for the horizontal line */
+.line {
+    flex: 1; /* Takes remaining space */
+    height: 1px;
+    background-color: #ccc; /* Color of the horizontal line */
+    margin-top: 1em; /* Adjust vertical margin for centering */
+}
+
+
+.remove-item {
+    margin-left: 10px; /* Adjust spacing between input and remove button */
+}
+
+.form-row.buttons {
+    display: flex;
+    justify-content: center; /* Horizontally center-aligns items */
+    align-items: center; /* Vertically center-aligns items */
+    margin-top: 20px; /* Adjust top margin as needed */
+}
+
+.form-row.buttons input[type="submit"] {
+    width: 100%; /* Ensure the submit button takes full width */
+    max-width: 200px; /* Optionally set a max-width for responsiveness */
+}
+
+
+
+@media (min-width: 1200px) {
+    .description-items {
+        flex-basis: calc(25% - 15px); /* Four items per row */
+    }
+}
+
+@media (max-width: 1200px) {
+    .description-items {
+        flex-basis: calc(50% - 15px); /* Two items per row */
+    }
+}
+
+@media (max-width: 600px) {
+    .description-items {
+        flex-basis: 100%; /* One item per row */
+    }
+
+    /* Stack other input fields vertically */
+    .form-column {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .description-items {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    .remove-item {
+        margin-left: 0;
+        margin-top: 5px; /* Adjust top margin for spacing */
+    }
+}
+
+
+.view-product-container {
+    margin: 50px auto; /* Center horizontally and provide top margin */
+    max-width: 800px; /* Limit width for larger screens */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Flex container for rows */
+.entry-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    margin-left: 30%; /* Space between rows */
+    margin-bottom: 15px; /* Space between rows */
+    width: 100%; /* Ensure full width */
+}
+
+/* Flex container for columns within each row */
+.entry {
+    flex: 1; /* Each column takes equal space */
+}
+
+/* Light color for labels */
+.light-color {
+    color: #304463; /* Dark blue color */
+}
+
+.product-description {
+    margin-top: 20px;
+    width: 100%; /* Occupy full width */
+}
+
+.description-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 100%; /* Ensure full width */
+}
+
+.item-details {
+    flex: 1; /* Each column takes equal space */
+}
+
+.item-details h4 {
+    margin: 0; /* Remove default margin */
+}
+
+.item-row {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 100%; /* Ensure full width */
+}
+
+.item-detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-detail h4 {
+    margin: 0; /* Remove default margin */
+}
+
+@media (max-width: 1200px) {
+
+    .item-row {
+        flex-wrap: wrap; /* Allow items to wrap */
+    }
+    .item-row .item-detail {
+        width: calc(50% - 15px); /* Two items per row */
+        margin-bottom: 15px; /* Space between rows */
+    }
+}
+
+@media (max-width: 600px) {
+    .entry-row {
+        flex-direction: column; /* Stack columns vertically on small screens */
+        justify-content: center; /* Center items horizontally */
+    }
+
+    .entry {
+        margin: 3%; /* Adjust margin as needed */
+        width: 100%; /* One item per row */
+    }
+
+    .item-row .item-detail {
+        width: 100%; /* One item per row */
+    }
+    .item-row {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .description-item {
+        flex-direction: column; /* Stack items vertically on extra small screens */
+    }
+    .item-row {
+        gap: 10px;
+    }
+}

@@ -1,0 +1,150 @@
+#button-container {
+  display: flex;
+  justify-content: flex-end;
+  /* Align items to the left */
+  padding: 20px;
+  /* Optional: Add padding as needed */
+}
+
+.styled-table th:first-child,
+.styled-table th:nth-child(2) {
+  text-align: left; /* Left align first and second column headers */
+}
+
+.styled-table th {
+  text-align: center; /* Center align all other headers */
+}
+
+.styled-table td:first-child,
+.styled-table td:nth-child(2) {
+  text-align: left; /* Left align first and second column */
+}
+
+.styled-table td {
+  text-align: center; /* Center align all other cells */
+}
+
+.table-action {
+  cursor: pointer;
+}
+/* CSS for hover effect on SVG icons */
+.table-action svg:hover {
+  transform: scale(1.1); /* Scale up the SVG on hover */
+  transition: transform 0.2s ease; /* Smooth transition */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* CSS for click effect on SVG icons */
+.table-action svg:active {
+  transform: scale(0.9); /* Scale down the SVG on click */
+}
+
+/* CSS for hover effect on SVG icons */
+.table-action svg:hover {
+  transform: scale(1.1); /* Scale up the SVG on hover */
+  transition: transform 0.2s ease; /* Smooth transition */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* CSS for click effect on SVG icons */
+.table-action svg:active {
+  transform: scale(0.9); /* Scale down the SVG on click */
+}
+
+/* Form CSS */
+.section {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Spacing between sections */
+}
+
+.section-title {
+  color: #304463; /* Dark blue */
+  margin-bottom: 20px;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Spacing between columns */
+}
+
+.flex-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #304463; /* Dark blue */
+}
+.submit {
+  margin-top: 20px;
+  width: 100%;
+}
+input[type="text"],
+input[type="email"],
+input[type="file"],
+input[type="password"],
+input[type="date"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+#profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#logoPreview {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .flex-row {
+    flex-direction: column;
+  }
+
+  .flex-column {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .section-title {
+    font-size: 18px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="file"],
+  input[type="password"],
+  input[type="date"],
+  textarea {
+    padding: 8px;
+    font-size: 14px;
+  }
+}

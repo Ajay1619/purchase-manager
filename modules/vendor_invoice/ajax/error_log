@@ -1,0 +1,12 @@
+[04-Oct-2024 18:19:11 Asia/Kolkata] PHP Warning:  Undefined array key "invoice_unit_of_measure" in /home/aquilate/public_html/trex.aquila-tech.in/modules/invoice/ajax/calculate_invoice.php on line 19
+[04-Oct-2024 18:19:11 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/aquilate/public_html/trex.aquila-tech.in/modules/invoice/ajax/calculate_invoice.php on line 19
+[04-Oct-2024 18:19:18 Asia/Kolkata] PHP Warning:  Undefined array key "invoice_unit_of_measure" in /home/aquilate/public_html/trex.aquila-tech.in/modules/invoice/ajax/calculate_invoice.php on line 19
+[04-Oct-2024 18:19:18 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/aquilate/public_html/trex.aquila-tech.in/modules/invoice/ajax/calculate_invoice.php on line 19
+[04-Oct-2024 18:20:18 Asia/Kolkata] PHP Warning:  Undefined array key "invoice_unit_of_measure" in /home/aquilate/public_html/trex.aquila-tech.in/modules/invoice/ajax/calculate_invoice.php on line 19
+[04-Oct-2024 18:20:18 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/aquilate/public_html/trex.aquila-tech.in/modules/invoice/ajax/calculate_invoice.php on line 19
+[04-Oct-2024 18:21:06 Asia/Kolkata] PHP Warning:  Undefined array key "invoice_unit_of_measure" in /home/aquilate/public_html/trex.aquila-tech.in/modules/invoice/ajax/calculate_invoice.php on line 19
+[04-Oct-2024 18:21:06 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/aquilate/public_html/trex.aquila-tech.in/modules/invoice/ajax/calculate_invoice.php on line 19
+[04-Oct-2024 18:22:49 Asia/Kolkata] PHP Warning:  Undefined array key "invoice_unit_of_measure" in /home/aquilate/public_html/trex.aquila-tech.in/modules/invoice/ajax/calculate_invoice.php on line 19
+[04-Oct-2024 18:22:49 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/aquilate/public_html/trex.aquila-tech.in/modules/invoice/ajax/calculate_invoice.php on line 19
+[04-Oct-2024 18:23:11 Asia/Kolkata] PHP Warning:  Undefined array key "invoice_unit_of_measure" in /home/aquilate/public_html/trex.aquila-tech.in/modules/invoice/ajax/calculate_invoice.php on line 19
+[04-Oct-2024 18:23:11 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/aquilate/public_html/trex.aquila-tech.in/modules/invoice/ajax/calculate_invoice.php on line 19

@@ -1,0 +1,340 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Top Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #304463, #7d8abc);
+  padding: 10px 20px;
+  color: #fff8db;
+  z-index: 1100; /* Ensure the navbar is above other content */
+  width: 100%; /* Ensure navbar spans full width */
+  position: fixed; /* Fixed position to stay on top */
+  top: 0; /* Top of the viewport */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-title {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff8db;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Move to the right side */
+  position: relative; /* Needed for dropdown positioning */
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  border: 2px solid #fff8db;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer; /* Pointer cursor to indicate clickable element */
+}
+
+.username {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 50px; /* Position below the avatar */
+  right: 0; /* Align to the right */
+  background-color: rgba(255, 248, 219, 0.5); /* Match navbar color */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1200; /* Ensure it's above other content */
+  overflow: hidden; /* Hide overflow */
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  color: #304463; /* dark blue */
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #304463; /* blue-gray */
+  color: #fff8db;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  min-width: 80px; /* Ensure sidebar has a minimum width */
+  background-color: #304463;
+  color: #fff8db;
+  transition: width 0.3s ease, transform 0.3s ease; /* Adjust transition properties */
+  position: fixed;
+  left: 0;
+  top: 0; /* Adjust top to overlap with top navbar */
+  bottom: 0;
+  z-index: 1200; /* Higher z-index to overlap navbar */
+  overflow-y: auto;
+  transform: translateX(-250px); /* Initial position off-screen */
+}
+
+.sidebar.open {
+  transform: translateX(0); /* Show sidebar */
+}
+
+.logo {
+  padding: 20px;
+  text-align: center;
+}
+
+.logo img {
+  width: 80%;
+  max-width: 120px;
+}
+
+.sidebar-menu {
+  list-style-type: none;
+  padding-top: 30px;
+}
+
+.sidebar-menu li {
+  border-bottom: 1px solid #7d8abc;
+}
+
+.sidebar-menu li a {
+  display: flex; /* Make the entire link area clickable */
+  align-items: center; /* Center items vertically */
+  padding: 15px; /* Ensure padding around the link */
+  color: #fff8db;
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.sidebar-menu li a:hover {
+  background-color: #7d8abc; /* Darken background on hover */
+}
+
+.sidebar-menu li.active a {
+  background-color: #7d8abc; /* Highlight active link */
+  color: #ffffff; /* Text color for active link */
+  border-left: 5px solid #fff8db; /* Left border color for active link */
+  padding-left: 10px; /* Adjust padding to accommodate left border */
+}
+
+.sidebar-menu li a svg {
+  margin-right: 1px; /* Add margin to the right of the SVG icon */
+}
+.sidebar-menu li a span {
+  flex: 1; /* Take up remaining space */
+  margin-left: 10px; /* Add margin to the left of the text */
+}
+
+/* Submenu Styles */
+.submenu .submenu-items {
+  display: none;
+  list-style-type: none;
+  background-color: #3a4b6b;
+  position: relative;
+  margin-left: 15px;
+  padding-left: 10px;
+}
+
+.submenu .submenu-items li {
+  border-bottom: none;
+}
+
+.submenu.subactive .submenu-items {
+  display: block;
+}
+
+.submenu .submenu-items li a {
+  padding: 10px 15px;
+  color: #fff8db;
+  position: relative;
+}
+
+.submenu .submenu-items li a:hover {
+  background-color: #7d8abc;
+}
+
+.submenu .submenu-items li a::before {
+  content: "→";
+  position: absolute;
+  left: -15px;
+  font-size: 18px;
+  color: #fff8db;
+}
+
+.submenu a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submenu .submenu-icon {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.submenu.subactive .submenu-icon {
+  transform: rotate(90deg);
+}
+main {
+  display: flex; /* Use flexbox for main content */
+  flex-direction: column; /* Stack children vertically */
+  flex: 1; /* Ensure content area expands to fill remaining space */
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+  padding-top: 90px; /* Ensure content starts below both navbars */
+  margin-left: 250px; /* Adjust margin to accommodate sidebar */
+}
+
+.menu-toggle {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  position: fixed;
+  top: 5px;
+  left: 10px;
+  z-index: 1100;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff8db;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+/* Hamburger menu animation */
+.menu-toggle.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-250px); /* Ensure sidebar starts off-screen */
+  }
+
+  .sidebar.open {
+    transform: translateX(0); /* Bring sidebar on-screen when open */
+  }
+
+  main {
+    margin-left: 0; /* Adjust content margin to align with no sidebar */
+    padding-top: 90px; /* Ensure content starts below the top navbar */
+  }
+
+  .menu-toggle {
+    display: block; /* Show menu toggle on mobile screens */
+  }
+}
+
+/* Ensure Navbar Visibility on Larger Screens */
+@media (min-width: 769px) {
+  .sidebar {
+    transform: none; /* Reset sidebar transform for larger screens */
+  }
+
+  .menu-toggle {
+    display: none; /* Hide menu toggle on larger screens */
+  }
+
+  main {
+    margin-left: 250px; /* Adjust margin for sidebar on larger screens */
+    padding-top: 70px; /* Adjust padding for sidebar on larger screens */
+  }
+}
+
+/* Responsive Sidebar Shrink */
+.sidebar.shrink {
+  width: 80px; /* Adjust sidebar width when shrunk */
+}
+
+.sidebar.shrink .navbar-title {
+  display: none; /* Hide title in shrunk mode */
+}
+
+.sidebar.shrink .sidebar-menu li a span {
+  display: none; /* Hide menu text in shrunk mode */
+}
+
+main.shrink {
+  margin-left: -150px; /* Adjust main margin for shrunk sidebar */
+}
+
+/* breadcrumb */
+
+.breadcrumb {
+  background-color: #fff;
+  padding: 10px 20px;
+}
+
+.breadcrumb ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb li + li::before {
+  content: ">";
+  color: #7d8abc;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #304463;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.breadcrumb a:hover {
+  color: #7d8abc;
+}
